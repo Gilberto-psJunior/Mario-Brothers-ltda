@@ -9,7 +9,7 @@
 
 body {
     background-color: #af0606;
-    background-image:   url(img/104-NINTENDOLINEAS_1200x1200.webp);
+    background-image: url(img/104-NINTENDOLINEAS_1200x1200.webp);
     color: #fff;
     font-size: 16px;
     overflow: hidden;
@@ -47,8 +47,8 @@ header nav ul li {
     cursor: pointer;
     position: relative;
     padding: 5px 0;
-    
-       font-family: 'New Super Mario Font U', sans-serif;
+
+    font-family: 'New Super Mario Font U', sans-serif;
 }
 
 header nav ul li::after {
@@ -75,7 +75,7 @@ header nav ul li:hover::after {
     overflow: hidden;
 }
 
-#whats :hover{
+#whats :hover {
     scale: 2;
 }
 
@@ -101,19 +101,22 @@ header nav ul li:hover::after {
     opacity: 1;
 }
 
+
 .product-img {
-    .product-img {
     width: 45%;
-    height: 100%; /* ou o valor que você quiser */
+    height: 100%;
+    /* ou o valor que você quiser */
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     z-index: 2;
+    scale: 1.5;
+    margin-top: 230px;
 }
 
-    
-}
+
+
 
 .product-tag {
     font-size: 1rem;
@@ -123,47 +126,50 @@ header nav ul li:hover::after {
     letter-spacing: 2px;
     margin-bottom: 10px;
     text-shadow: 3px 3px 5px rgb(245, 243, 243);
-
+    border-radius: 20%;
 
 }
 
 .product-name {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-family: 'New Super Mario Font U', sans-serif;
-
+    text-align: center;
     line-height: 1.1;
     margin-bottom: 20px;
 }
 
-.description {
-    font-size: 1.1rem;
-    color: #b4a7a7;
-    line-height: 1.6;
-    margin-bottom: 30px;
-    max-width: 600px;
-    text-shadow:
-        1px 1px 2px red,
-        0 0 1em blue,
-        0 0 0.2em blue;
+.product-name p {
+    text-align: center;
+}
+
+.description img {
+    margin-left: -80px;
+
+    border-radius: 18px;
+    
 
 }
 
-i :hover{
-scale: 1.5;
+
+
+i :hover {
+    scale: 1.5;
 }
 
 
 .product-img img {
-  scale: 1.3; 
+    scale: 0.8;
     max-height: 100%;
-    filter: drop-shadow(0 0 30px rgba(255, 255, 255, 0.473));
+    padding-right: 30px;
+    filter: drop-shadow(0 0 30px rgb(0, 0, 0));
+
 }
 
 .product-img :hover {
     cursor: pointer;
-    
-  
-    
+
+
+
 }
 
 
@@ -221,9 +227,9 @@ button {
     height: 50px;
 
     cursor: pointer;
-background-image: url(img/Adobe\ Express\ -\ file.png);
+    background-image: url(img/Adobe\ Express\ -\ file.png);
 
-    
+
 
 
     border: none;
@@ -266,51 +272,98 @@ background-image: url(img/Adobe\ Express\ -\ file.png);
     z-index: 5;
 }
 
- @keyframes slideInRight {
-    from { transform: translateX(100%); opacity: 0; }
-    to { transform: translateX(0); opacity: 1; }
-  }
-  @keyframes slideOutLeft {
-    from { transform: translateX(0); opacity: 1; }
-    to { transform: translateX(-100%); opacity: 0; }
-  }
-  @keyframes slideInLeft {
-    from { transform: translateX(-100%); opacity: 0; }
-    to { transform: translateX(0); opacity: 1; }
-  }
-  @keyframes slideOutRight {
-    from { transform: translateX(0); opacity: 1; }
-    to { transform: translateX(100%); opacity: 0; }
-  }
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
 
-  .slide-in-right { animation: slideInRight 0.5s forwards; }
-  .slide-out-left { animation: slideOutLeft 0.5s forwards; }
-  .slide-in-left { animation: slideInLeft 0.5s forwards; }
-  .slide-out-right { animation: slideOutRight 0.5s forwards; }
-  @media (max-width: 768px) {
-  .item {
-    flex-direction: column; /* empilha */
-    justify-content: flex-start;
-    text-align: center;
-    padding: 20px;
-  }
-
-  
-
-  .content {
-    width: 100%;
-    padding: 0;
-    align-items: center; /* centraliza texto */
-    text-align: center;
-  }
-
-  .product-tag {
-    margin-top: 15px; /* garante que venha abaixo da imagem */
-  }
-  .container {
-    height: 100vh;
-    position: relative;
-    background: linear-gradient(135deg, #e90303d2 0%, #000000af 100%);
-    overflow: auto;
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
+
+@keyframes slideOutLeft {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutRight {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+.slide-in-right {
+    animation: slideInRight 0.5s forwards;
+}
+
+.slide-out-left {
+    animation: slideOutLeft 0.5s forwards;
+}
+
+.slide-in-left {
+    animation: slideInLeft 0.5s forwards;
+}
+
+.slide-out-right {
+    animation: slideOutRight 0.5s forwards;
+}
+
+@media (max-width: 768px) {
+    .item {
+        flex-direction: column;
+        /* empilha */
+        justify-content: flex-start;
+        text-align: center;
+        padding: 20px;
+    }
+
+
+
+    .content {
+        width: 100%;
+        padding: 0;
+        align-items: center;
+        /* centraliza texto */
+        text-align: center;
+    }
+
+    .product-tag {
+        margin-top: 15px;
+        /* garante que venha abaixo da imagem */
+    }
+
+    .container {
+        height: 100vh;
+        position: relative;
+        background: linear-gradient(135deg, #e90303d2 0%, #000000af 100%);
+        overflow: auto;
+    }
 }
