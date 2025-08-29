@@ -49,14 +49,11 @@ Abra o arquivo index.html no navegador.
 
 📌 Melhorias Futuras
 
-🔊 Adicionar mais efeitos sonoros e músicas do jogo
-
 🎨 Implementar mais animações CSS
 
 📱 Otimizar ainda mais a responsividade
 
 👨‍💻 Autor
 
-Projeto desenvolvido por Gilberto Pereira (Lance Jrr).
-📧 [Seu Email]
-🌐 [Seu LinkedIn ou Portfólio]
+Projeto desenvolvido por Gilberto Pereira (Junior Santos).
+🌐 https://www.linkedin.com/in/gilberto-juniorsantos
