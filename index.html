@@ -24,7 +24,7 @@
         <nav>
             <ul>
                 <li>Home</li>
-               <a href="port.html"><li>Portifolio <b></b></li></a> 
+               <a href="port.html"><li>Depoimentos <b></b></li></a> 
                 <li>
                     <link rel="stylesheet"
                         href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -140,7 +140,7 @@
     const currentItem = items[current];
     const nextItem = items[newIndex];
 
-    // imagem sempre visível
+  
     currentItem.querySelector('.content').classList.add(direction === "right" ? "slide-out-left" : "slide-out-right");
     nextItem.classList.add("active");
     nextItem.querySelector('.content').classList.add(direction === "right" ? "slide-in-right" : "slide-in-left");
@@ -172,13 +172,13 @@
 
         productImages.forEach(img => {
             img.addEventListener('mouseenter', () => {
-                hoverSound.currentTime = 0; // reinicia do começo
+                hoverSound.currentTime = 0; 
                 hoverSound.play();
             });
 
             img.addEventListener('mouseleave', () => {
-                hoverSound.pause(); // pausa ao sair
-                hoverSound.currentTime = 0; // reseta
+                hoverSound.pause(); 
+                hoverSound.currentTime = 0; 
             });
         });
 

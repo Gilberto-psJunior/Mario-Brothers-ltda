@@ -20,7 +20,7 @@
 
 <body>
     <header>
-        <div class="logo">conheça nosso trabalho:</div>
+        <div class="logo">"Comentários 1-UP" ❤️🍄 </div>
 
         <nav>
             <ul>
@@ -49,44 +49,92 @@
         </div>
         <div class="list">
 
-            <div class="item active">
-                <div class="product-img">
-                    <img src="./img/comercial-woman.png" alt="">
-                </div>
-                <div class="content">
-
-                    <p class="product-name">      Reparo em vazamento do banheiro </p>
-                    <p class="description1"><img src="img/tumblr_7de69af0b33b52a67e2562253418c3f6_a4836ee0_500.webp" alt="">
-                        </p>
-
-                </div>
-            </div>
-            <div class="item">
-                <div class="product-img">
-                    <img  src="./img/comercial-woman.png" alt="">
-                </div>
-                <div class="content">
-
-                    <p class="product-name">        desemtupimento de vazo</p>
-                    <div class="description" ><img style="width: 100%;"src="img/conserto vazo.png" alt="">
-                    </div>
-
-                </div>
-            </div>
-            <div class="item">
-                <div class="product-img">
-                    <img src="./img/comercial-woman.png" alt="">
-                </div>
-                <div class="content">
-
-                    <p class="product-name">Instalação e reparo de sistemas de gás:</p>
-                    <p class="description"><p class="description"><img src="img/fixing.jpg" alt="">
-                        </p> </p>
-
-                </div>
-            </div>
-
+    <!-- Bowser -->
+    <div class="item active">
+        <div class="product-img" id="peach">
+            <img src="./img/bowser-profile.png" alt="">
         </div>
+        <div class="content">
+            <p class="product-name">⭐ Bowser</p>
+            <p class="description">
+                “Chamei os irmãos pra arrumar o cano do meu castelo. Resolveram rapidinho… mas no fim
+                roubaram a minha princesa de novo! Péssimo custo-benefício.”
+            </p>
+        </div>
+    </div>
+
+    <!-- Peach -->
+    <div class="item">
+        <div class="product-img" id="peach">
+            <img src="./img/peach-profile.jpg" alt="">
+        </div>
+        <div class="content">
+            <p class="product-name">⭐ Peach</p>
+            <p class="description">
+                “Excelente atendimento! O problema do encanamento foi resolvido, mas o Luigi ficou com
+                medo do fantasma que apareceu no porão. Recomendo mesmo assim.”
+            </p>
+        </div>
+    </div>
+
+    <!-- Yoshi -->
+    <div class="item">
+        <div class="product-img" id="peach">
+            <img src="./img/yoshi-profile.jpeg" alt="">
+        </div>
+        <div class="content">
+            <p class="product-name">⭐ Yoshi</p>
+            <p class="description">
+                “Eles consertaram o vazamento e ainda me deram uma maçã de brinde. Só fiquei chateado porque
+                o Mario usou minha língua como ferramenta improvisada.”
+            </p>
+        </div>
+    </div>
+
+    <!-- Donkey Kong -->
+    <div class="item">
+        <div class="product-img">
+            <img src="./img/donkeykong-profile.jpg" alt="">
+        </div>
+        <div class="content">
+            <p class="product-name">⭐ Donkey Kong</p>
+            <p class="description">
+                “Chamaram de ‘cano entupido’ mas no fim era só uma banana que eu tinha esquecido lá.
+                Resolveram em dois segundos, mas o Mario fez questão de dar uma pirueta na saída. Eu faria muito melhor.”
+            </p>
+        </div>
+    </div>
+
+    <!-- Toad -->
+    <div class="item">
+        <div class="product-img">
+            <img src="./img/toad-profile.jpg" alt="">
+        </div>
+        <div class="content">
+            <p class="product-name">⭐ Toad</p>
+            <p class="description">
+                “O cano da minha casa tava pingando fazia semanas! Eles chegaram pulando no encanamento,
+                esmagaram uma tartaruguinha no processo e, de alguma forma, consertaram. Mágicos!”
+            </p>
+        </div>
+    </div>
+
+    <!-- Wario -->
+    <div class="item">
+        <div class="product-img">
+            <img src="./img/wario-profile.png" alt="">
+        </div>
+        <div class="content">
+            <p class="product-name">⭐ Wario</p>
+            <p class="description">
+                “Serviço bom, preço ruim. O Mario falou que ia dar desconto de amigo, mas me cobrou o dobro.
+                Vou abrir minha própria empresa de encanamento, só espera!”
+            </p>
+        </div>
+    </div>
+
+</div>
+
         <div class="arrows">
             <button class="arrow-btn" onclick="next()" id="next">
 
@@ -123,7 +171,7 @@
             const currentItem = items[current];
             const nextItem = items[newIndex];
 
-            // imagem sempre visível
+            
             currentItem.querySelector('.content').classList.add(direction === "right" ? "slide-out-left" : "slide-out-right");
             nextItem.classList.add("active");
             nextItem.querySelector('.content').classList.add(direction === "right" ? "slide-in-right" : "slide-in-left");
@@ -155,13 +203,13 @@
 
         productImages.forEach(img => {
             img.addEventListener('mouseenter', () => {
-                hoverSound.currentTime = 0; // reinicia do começo
+                hoverSound.currentTime = 0; 
                 hoverSound.play();
             });
 
             img.addEventListener('mouseleave', () => {
-                hoverSound.pause(); // pausa ao sair
-                hoverSound.currentTime = 0; // reseta
+                hoverSound.pause(); 
+                hoverSound.currentTime = 0; 
             });
         });
 
